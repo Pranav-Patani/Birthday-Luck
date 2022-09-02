@@ -1,0 +1,74 @@
+/**Basic Setup**/
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;800&display=swap");
+
+:root {
+  --primary-color: #6d28d9;
+  --text-color-light: #f5f3ff;
+  --gradient-dark: var(--primary-color);
+  --gradient-light: #7c3aed;
+  --button-color: #5b21b6;
+}
+
+body {
+  font-family: "Bitter", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  line-height: 150%;
+
+  background-image: linear-gradient(
+    var(--gradient-dark),
+    var(--gradient-light)
+  );
+  text-align: center;
+  color: var(--text-color-light);
+}
+
+/**Header**/
+
+.hero {
+  background-image: linear-gradient(
+    var(--gradient-light),
+    var(--gradient-dark)
+  );
+  padding: 2rem;
+}
+
+/**main**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1.5rem auto;
+}
+
+.dob-heading,
+.lucky-num-heading {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.dob,
+.lucky-num {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.button {
+  width: 15%;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+}
