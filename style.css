@@ -8,6 +8,8 @@
   --gradient-dark: var(--primary-color);
   --gradient-light: #7c3aed;
   --button-color: #5b21b6;
+  --input-fields: #6d28d9;
+  --input-fields-border: #6d28d9;
 }
 
 body {
@@ -43,8 +45,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: 2rem;
+  background-image: linear-gradient(
+    var(--gradient-light),
+    var(--gradient-dark)
+  );
+  border-radius: 2rem;
 }
 
 .input-fields {
@@ -56,8 +63,8 @@ body {
 
 .dob-heading,
 .lucky-num-heading {
-    font-size: 22px;
-    font-weight: bolder;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 .dob,
@@ -65,10 +72,39 @@ body {
   width: 100%;
   padding: 1rem;
   margin: 1rem auto;
+  background-color: var(--input-fields);
+  color: var(--text-color-light);
+  font-weight: bold;
+  border: 2px solid var(--input-fields-border);
+  border-radius: 1rem;
 }
 
 .button {
   width: 15%;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem auto;
+  background-color: var(--button-color);
+  border-radius: 0.5rem;
+  border: 2px solid var(--gradient-dark);
+  color: var(--text-color-light);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.output {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.footer {
+  background-image: linear-gradient(
+    var(--gradient-light),
+    var(--gradient-dark)
+  );
+  padding: 1.5rem;
+}
+
+.footer p {
+  width: 60%;
   margin: 1rem auto;
 }
