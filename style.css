@@ -39,12 +39,24 @@ body {
   padding: 2rem;
 }
 
+@media only screen and (max-width: 462px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 /**main**/
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin: 2rem auto;
   padding: 2rem;
   background-image: linear-gradient(
@@ -54,6 +66,18 @@ body {
   border-radius: 2rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+}
+
 .input-fields {
   display: flex;
   flex-direction: column;
@@ -61,10 +85,30 @@ body {
   margin: 1.5rem auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .input-fields {
+    width: 60%;
+  }
+}
+
 .dob-heading,
 .lucky-num-heading {
   font-size: 22px;
   font-weight: bolder;
+}
+
+@media only screen and (max-width: 668px) {
+  .dob-heading,
+  .lucky-num-heading {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 607px) {
+  .dob-heading,
+  .lucky-num-heading {
+    font-size: 19px;
+  }
 }
 
 .dob,
@@ -80,8 +124,7 @@ body {
 }
 
 .button {
-  width: 15%;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.5rem;
   margin: 0.5rem auto;
   background-color: var(--button-color);
   border-radius: 0.5rem;
@@ -107,4 +150,22 @@ body {
 .footer p {
   width: 60%;
   margin: 1rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer p {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .footer p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .footer p {
+    width: 90%;
+  }
 }
